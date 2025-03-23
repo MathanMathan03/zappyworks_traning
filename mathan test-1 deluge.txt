@@ -1,0 +1,130 @@
+// 1. Write a deluge script which should take three integer values representing the 
+// lengths of the sides of a triangle and determine if the triangle is: Equilateral 
+// Triangle or Isosceles Triangle, Scalene Triangle? 
+
+//take three interger values
+left = 3;
+right =3;
+down =3;
+
+if (left==right && right==down )
+{
+	info "It is Equilateral Triangle";
+}
+else if (left==right) 
+{
+	info "It is Isosceles Triangle";
+}
+else 
+{
+	info "It is Scalene Triangle";
+}
+
+
+// 2. Write a deluge script to convert days into years, months, weeks, and days 
+// Input: 373 
+// (Output will be : Year -1, Month - 0, Week - 1, Days - 1) 
+given_input=373;
+year=0;
+month=0;
+week=0;
+day=0;
+
+ if (given_input>=365)
+{
+	year=given_input/365;
+	year=year.floor();
+ 	given_input=given_input-(year*365);	
+ }
+if (given_input>=30)
+{
+	month=given_input/30;
+	month=month.floor();
+	given_input=given_input-(month*30);	
+}
+if (given_input>=7)
+{
+	week=given_input/7;
+	week=week.floor();
+	given_input=given_input-(week*7);	
+}
+if (given_input>=1)
+{
+	day=given_input;
+}
+
+info"years ="+" "+year;
+info"months ="+" "+month;
+info"weeks ="+" "+week;
+info"days ="+" "+day;
+
+// 3. Check whether given number is Armstong Number or Not. 
+// Explanation: 
+// An Armstrong number (also known as a narcissistic number) is a 
+// number that is equal to the sum of its own digits, each raised to the 
+// power of the number of digits. 
+// Example: 
+// 153 : (1^3 + 5^3 + 3^3 = 1 + 125 + 27 =153)
+given_input=154;
+tolst=given_input.toList("");
+s_val=tolst.size();
+final=0;
+for each i in tolst
+{
+
+	final=final+i.power(s_val);
+}
+if(final==given_input)
+{
+	info given_input +" It is Armstrong" ;
+}
+else 
+{
+	info given_input +" It not Armstrong" ;
+}
+
+	}
+
+// // 4. Find the occurrence count of element present in the given lists 
+// //Output : {"Vijay": 2, "Surya":2, "Ajith":2, "Sangeetha":1, "Shalini":2} 
+// List1 = {"Vijay", "Surya", "Ajith"}; 
+// List2 = {"Vijay", "Surya", "Shalini"}; 
+// List3 = {"Ajith", "Sangeetha", "Shalini"}; 
+// allist = List();
+// allist.addAll(List1);
+// allist.addAll(List2);
+// allist.addAll(List3);
+
+// for each alst in allist
+// {
+// 	info allist.getOccurenceCount(alst);
+// }
+
+
+
+// 5. Find the Closest Number in a given list 
+// numbers={33466,7897,236247,5446,23446,789678,895,3454,78656,65436}; 
+// Find Number = 75457; 
+// numbers = {33466, 7897, 236247, 5446, 23446, 789678, 895, 3454, 78656, 65436};
+// findNumber = 75457;
+// closestNumber = 0;
+// minDifference = 0;
+// for each num in numbers
+// {
+//     difference = abs(num - findNumber);
+//     if(minDifference == 0 || difference < minDifference)
+//     {
+//         minDifference = difference;
+//         closestNumber = num;
+//     }
+// }
+
+// info "Closest Number: " + closestNumber;
+
+
+​
+
+
+
+
+

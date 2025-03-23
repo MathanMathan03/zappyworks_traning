@@ -1,0 +1,102 @@
+// //1. Write a deluge script to retrieve an element (at a specified index) from a given list. 
+// fruits= {"Strawberry", "Cherry", "Apple", "Banana"} ;
+// info fruits.get(1);
+
+
+//2. Write a deluge script to insert an element into the list at first position.
+// fruits= {"Strawberry", "Cherry", "Apple", "Banana"};
+// add_fruits = {"mango"};
+// add_fruits.addAll(fruits);
+// info add_fruits;
+
+
+
+
+//3. Write a deluge script to find the product of the list of numbers. 
+list= {6,8,9,34,7};
+start=1;
+for each pro in list
+{
+	start= start * pro;
+} 
+	info "The product of the list is  " + start ;
+
+//4.For a given number Print its Multiplication table by using list (Number=6)
+// given_input = 7;
+// numbers = {1,2,3,4,5,6,7,8,9,10};
+// for each table in numbers
+// {
+//  tab_value = given_input * tablfe ;
+//  info  given_input + "*" + table  +"="+ tab_value;
+// }
+
+// //5. write a deluge script to print the list of numbers in words. 
+// numbers= {3, 6, 9, 10} ;
+// for each no in numbers
+// {
+// 	info no.toWords("en-us");
+// }
+
+
+//6. write a deluge script to print the sum of all odd numbers in the given list. 
+// numbers= {1,8,9,45,78,34} ;
+// count=0;
+// for each no in numbers
+// {
+// 	if(isOdd(no))
+// 	{
+// 		count+=no;
+// 	}
+// }
+// info "sum of the odd number is " + count;
+
+// //7.write a deluge script to count the all odd numbers from the given list. 
+// no_lst= {4,90,88,77,11,13,1234};
+// count=0;
+// for each no in no_lst
+// {
+// 	if(isOdd(no))
+// 	{
+// 		count+=1;
+// 	}
+// }
+// info "The total Odd numbers in given list is " + count;
+
+//8.write a deluge script to print the words (always, like, be) for each sentences in the given list.  
+Sentences= {"Positive thinking always leads to success", "I like Nature", "Be positive"};
+sen = Sentences.toCollection(" ");
+ line = sen.lower();
+given_words ={"always","like","be"};
+for each  words in line
+{
+ 	if(given_words == words){
+		info words;
+	}
+}
+
+
+
+//9.write a deluge script to print the index value for each elements in the given list. 
+// //Example: Index of strawberry is 0.
+// fruits= {"Strawberry", "Cherry", "Apple", "Banana"} ;
+// for each fru in fruits
+// {
+// 	index_val = fruits.indexOf(fru);
+// 	info "Index of  "+ fru + " is " +index_val;
+// }
+
+
+//10. write a deluge script to find the square root of each number in the list and Print the value into the list. 
+numbers= {44,89,99,100,12 };
+empty_list ={};
+for each no in numbers
+{
+   lst =no.sqrt();
+   empty_list.add(lst);
+}
+info empty_list;
+
+
+
+
+

@@ -1,0 +1,121 @@
+// //1. Find the largest number in the list - Input = {22,44,3,45,78,999,99}; 
+// input_no = {22,44,3,45,78,999,99}; 
+// info input_no.largest();
+
+//2. Second Largest number in the list - Input = {22,44,3,45,78,999,99}  
+// input_no = {22,44,3,45,78,999,99} ;
+// sorrt = input_no.sort(false).get(1);
+// info "The second largest number is " + sorrt;
+
+//3. Find duplicates in the list - Input = [1, 2, 3, 4, 5, 1, 2, 3]; 
+// number = {1, 2, 3, 4, 5, 1, 2, 3};
+// new_nu =List();
+// for each num in number
+// {
+// 	count = number.getOccurenceCount(num);
+// 	if(count<2){
+// 	}
+// 	else 
+//     {
+// 		//info "it is dubilcate" + num;
+// 		new_nu.add(num);
+//     }
+// }
+// info "The duplicates value is  " + new_nu.distinct();
+
+
+4) 
+ input_list = [1, 2, 3, 4, 5, 6, 7, 8];
+ new_list =List();
+ sorting = input_list.sort();
+ end_no = sorting.largest();
+ start_no = sorting.get(0);
+
+ for each il in input_list
+ {
+	random = randomNumber(start_no,end_no);
+	 new_list.add(random);
+	 a = new_list.distinct();
+	
+ }
+ info new_list;
+
+
+
+
+
+//  5. TO REVERSE THE NUMBERS IN GIVEN LIST: - Input = {1, 2, 3, 4, 5}; 
+// Input_no = {1, 2, 3, 4, 5}; 
+//info Input_no.reverse();
+
+
+
+6. Print the output from the given string or text into a separate list 
+// character_list = {"fny46$@sdv","ib456&^dfg","6165dvd$%&%"}; 
+// Output : 
+// Alpha list : ["f","n","y","s","d","v"],["i","b","d","f","g"],["d","v","d"] 
+// Number list : ["4","6"],["4","5","6"],["6","1","6","5"] 
+// Character list : ["$","@"],["&","^"],["$","%","&","%"] 
+character_list = {"Fny46$@sdv","ib456&^dfg","6165dvd$%&%"};
+// alpha=list();
+// number=list();
+// symbol=list();
+// for each k in character_list
+// {
+// 	lst=k.toList("");
+// 	a2=list();
+// 	n2=list();
+// 	s2=list();
+// 	for each b in lst
+//     {
+// 		if(b.matches("[a-z]{1}") || b.matches("[A-Z]{1}"))
+// 		{
+// 			 a2.add(b);
+// 		}
+// 		else if (b.matches("[0-9]{1}")) 
+//         {
+// 			n2.add(b);
+//         }
+// 		else
+//         {
+// 			s2.add(b);
+//         }
+//     }
+// 	alpha.add(a2);
+// 	number.add(n2);
+// 	symbol.add(s2);
+// }
+// info "Alpha : " + alpha ;
+// info "Number : " + number;
+// info "Symbol : " + symbol;
+
+
+
+// Type Here
+// 7. Order Processing System: You are building an order processing system in Deluge, and 
+// you need to store customer information, including their name, email, and order details. 
+// Design a Map data structure to store this information, and write a Deluge script to add a 
+// new customer, update an existing customer's order, and retrieve a customer's order 
+// details. 
+//Order processing system;
+//store customer information;
+customer_info ={
+    {"Name":"diva","Email":"diva@gmail.com","Order_deltails":{"product":"Mobile","Ammount":10000}},
+    {"Name":"vijay","Email":"vijay@gmail.com","Order_deltails":{"product":"laptop","Ammount":20000}}
+};
+ new_customer = {"Name":"mari","Email":"maran@gmail.com","Order_deltails":{"product":"Keyboard","Ammount":40000}};
+//Add new customer 
+customer_info.add(new_customer);
+// /info customer_info;
+//update an existing customer's order 
+for each ci in customer_info
+{
+    if (ci.get("Order_deltails").get("product")=="Mobile")
+    {
+        ci.update("product","Smartwatch");
+        ci.update("Ammount", 5000); 
+    }
+}
+// info customer_info;
+info customer_info;
+

@@ -1,0 +1,76 @@
+//fourth-ex
+
+// // 1.Write a deluge script to create a new list, add some colors (string) and print out the collection.
+// colors_list = Collection("Red","Green","Blue","Black");
+// info colors_list;
+
+// //2. Write a deluge script to iterate through all elements in a list.  
+// names={"mari","kumar","manmathan","shadow"};
+// for each name in names
+// {
+// 	info name;
+// }
+
+
+// //3. Write a deluge script to search an element in a list. 
+// numbers = {1,2,3,6,7,9};
+// info numbers.get(5);
+
+
+// //4. Write a deluge script to remove the third element from a list.
+// bike = {"Rx100","Xl 100","R15","Duke","KTM"};
+// bike.remove(2);
+// info bike.replaceAll(",",",  ");
+
+// //5.Write a deluge script to print all the elements of a List using the position of the elements.
+// company = {"zappyworks","Tcs","salesqueen","zoho"};
+// for each comp in company
+// {
+// 	indx = company.indexOf(comp)+1;
+// 	info "Position " + indx + " - " + "Element : " +comp ;
+// }
+
+
+
+//6.Write a deluge script to find whether the number is divisible by 5 or not from the given list. Marks= {90,65,23,90,34} 
+
+// Marks= {90,65,23,90,34};
+// for each divied in Marks
+// {
+// 	if(divied % 5 == 0)
+// 	{
+// 		info "The 5 is Divisible by " + divied;
+// 	}
+// }
+
+
+// //7.Write a deluge script to remove the duplicate value and print each element in lowercase from the given list. Flowers= {rose, lotus, lily, Jasmine, lily,sun flower} 
+
+// flower = {"rose", "lotus", "lily", "Jasmine", "lily", "sunflower"};
+// info flower.distinct().lower();
+
+
+//8.Write a deluge script to find the absolute value for the given list.  
+// Numbers={123.5, 789.90, 876.65, 8976.76} ;
+// for each absl in Numbers
+// {
+// 	 info absl.abs();
+// }
+
+// //9. write a deluge script to write the given number into Ascending order. Numbers_list= {87,90,67,23,56,90,65,90} 
+//  Numbers_list= {87,90,67,23,56,90,65,90};
+//  info Numbers_list.sort(true);
+
+
+// //10. write a deluge script to find the even and odd numbers from a list. 
+// List= {12,11,22,77,3433,90} ;
+// for each item in List
+// {
+// 	if(isEven(item)){
+// 		info "Even Number is " + item;
+// 	}
+// 	else 
+//     {
+// 		info "Odd Number is " + item;
+//     }
+// }

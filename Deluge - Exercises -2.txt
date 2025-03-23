@@ -1,0 +1,206 @@
+//Exercises 2
+
+//-----------------------------------------------------------------------------------------
+//1) Write a Deluge Script to check whether a number is negative, positive, or zero.
+
+/* num = 0;
+if(num > 0){
+	info "this number is positive" + num;	
+	}
+else if (num < 0) 
+{
+	info "This number is negative" + num;
+}
+else{
+	info "This is zero" + num;
+} */
+
+//------------------------------------------------------------------------------------------------
+  
+//2) Write a Deluge Script to check whether a number is divisible by 5 or 11 or not.
+
+/* divnum = 100;
+if(0 != divnum){
+if(divnum % 5 == 0 || divnum  % 11 ==0){
+	info "It divisible";
+}
+else 
+{
+  info "It is not divisible";
+  }
+  }
+  else {
+	  info "It is zero can't divide  "  + divnum;
+  } */
+
+//---------------------------------------------------------------------------------------------
+
+//3) Write a Deluge Script to check whether a number is even or odd.
+
+/* givnum = 3;
+if(givnum % 2 == 0)
+{
+	info "This is even number  " + givnum;
+}
+else 
+{
+	info "This is odd number " + givnum ;
+} */
+
+//second method
+
+given_number = 4;
+// if(given_number.isEven()){
+// 	info "It is Even number";
+// }
+// else{
+// 	info "It is Odd number";
+// }
+
+//---------------------------------------------------------------------------------------------------------
+
+//4) Write a Deluge Script to check whether a year is a leap year or not. 
+
+leapYear = 1900;
+// if(leapYear % 4 == 0){
+// 	info "leap year" + leapYear;
+// if (leapYear % 400 == 0 || leapYear % 100 != 0 ) 
+// {
+// 	info "leap year" + leapYear;
+// }
+// }
+// else{
+// 	info "It is not leap year";
+// }
+
+//-------------------------------------------------------------------------------------------------------------
+
+//5) Write a Deluge Script to check whether a character is an alphabet or not.
+
+/*  alp = 8768;
+ 
+ if(alp.isText()){
+	 info "It is a Alphabet";
+ }
+ else 
+ {
+	 info "It is not Alphabet";
+ }
+ */
+
+//--------------------------------------------------------------------------------------------------------
+
+// 6) Write a Deluge Script to input any alphabet and check whether it is vowel or consonant. 
+
+// Char="B";
+// if (Char.matches("[A,E,I,O,U,a,e,i,o,u]"))
+// {
+// 	info "Given Char is an Consonant";
+// }
+// else
+// {
+// 	info "Given Char is an Vowel";
+// }
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------
+
+// 7) Write a Deluge Script to input any character and check whether it is an alphabet, digit, or special character. 
+
+given_input ="@";
+if(given_input.matches("[a-z A-Z]"))
+{
+  info "It is Alphabet";
+}
+else if ( given_input.isNumber() == true) 
+{
+	info "It is Number";
+}
+else 
+{
+	info "It is special character";
+}
+
+
+
+ //------------------------------------------------------------------------------------------------------------
+
+// 8)Initialize a variable with a date value and print it. 
+
+/* datee = '01/03/2002';
+info datee;
+ */
+
+//-----------------------------------------------------------------------------------------------------------
+
+// 9) Initialize a variable with a date & time value and print it. 
+
+/* gtDateTime = '01/03/2025 11:11:30';
+info gtDateTime.getDateTime(); */
+
+//-------------------------------------------------------------------------------------------------------------
+
+//10) Compute the square of a given number and print it.
+
+// sqnum = 5;
+// info sqnum * sqnum;
+
+//----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
